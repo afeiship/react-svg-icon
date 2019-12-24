@@ -1,24 +1,14 @@
 $react-svg-icon-options: () !default;
 
 .react-svg-icon {
-  color: #000;
-  border: 4px dashed #ccc;
-  padding: 20px;
-  user-select: none;
-  &:hover {
-    border-color: #ddd;
-    background: #f3f3f3;
-  }
-
-  p {
-    margin-bottom: 10px;
-  }
-
-  .icon-play {
-    padding: 10px;
-    min-width: 120px;
-    &:focus {
-      outline: none;
-    }
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  font-size: 14px;
+  fill: currentColor;
+  overflow: hidden;
+  > * {
+    pointer-events: none;
   }
 }
