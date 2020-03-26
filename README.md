@@ -5,12 +5,19 @@
 ```shell
 npm install -S @feizheng/react-svg-icon
 ```
+
+## update
+```shell
+npm update @feizheng/react-svg-icon
+```
+
 ## properties
-| property  | type | description |
-| --------- | ---- | ----------- |
-| className | -    | -           |
-| iconClass | -    | -           |
-| value     | -    | -           |
+| Name      | Type   | Default | Description                           |
+| --------- | ------ | ------- | ------------------------------------- |
+| className | string | -       | The extended className for component. |
+| iconClass | string | 'icon'  | The main(prefix) icon class.          |
+| value     | string | -       | The icon name.                        |
+
 
 ## usage
 1. import css
@@ -22,21 +29,27 @@ npm install -S @feizheng/react-svg-icon
   ```
 2. import js
   ```js
-  import React from 'react';
-  import ReactDOM from 'react-dom';
   import ReactSvgIcon from '@feizheng/react-svg-icon';
-  
-  // your app:
-  class App extends React.Component{
-    render(){
+  import ReactDOM from 'react-dom';
+  import React from 'react';
+  import 'phoenix-icons';
+  import './assets/style.scss';
+
+  class App extends React.Component {
+    render() {
       return (
-        <ReactSvgIcon value="search-v1"/>
-      )
+        // copy value from iconfont: https://www.iconfont.cn/manage/index?manage_type=myprojects&projectId=YOURPROJECT_ID
+        <div className="app-container">
+          <ReactSvgIcon value="iconPaaS_test" />
+          <ReactSvgIcon value="iconPaaS_search" />
+          <ReactSvgIcon value="iconPaaS_sort" />
+        </div>
+      );
     }
   }
 
-  // render to dom:
-  ReactDOM.render(<App/>, document.getElementById('app'));
+  ReactDOM.render(<App />, document.getElementById('app'));
+
   ```
 
 ## documentation

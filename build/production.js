@@ -1,4 +1,4 @@
-import baseConfig from '.';
+import baseConfig from './base';
 import merge from 'webpack-merge';
 import {
   configs,
@@ -15,7 +15,8 @@ export default merge(baseConfig, {
     library: 'ReactSvgIcon'
   }),
   externals: externals.base({
-    '@feizheng/noop': '@feizheng/noop'
+    '@feizheng/noop': '@feizheng/noop',
+    antd: 'antd'
   }),
   plugins: [plugins.clean(), plugins.copyStyles()]
 });

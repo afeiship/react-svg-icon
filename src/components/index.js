@@ -7,11 +7,21 @@ import objectAssign from 'object-assign';
 
 const CLASS_NAME = 'react-svg-icon';
 
-export default class extends Component {
+export default class ReactSvgIcon extends Component {
   static displayName = CLASS_NAME;
+  static version = '__VERSION__';
   static propTypes = {
-    iconClass: PropTypes.string,
+    /**
+     * The extended className for component.
+     */
     className: PropTypes.string,
+    /**
+     * The main(prefix) icon class.
+     */
+    iconClass: PropTypes.string,
+    /**
+     * The icon name.
+     */
     value: PropTypes.string
   };
 
