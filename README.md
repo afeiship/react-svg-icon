@@ -39,7 +39,8 @@ npm update @feizheng/react-svg-icon
   class App extends React.Component {
     render() {
       return (
-        // copy value from iconfont: https://www.iconfont.cn/manage/index?manage_type=myprojects&projectId=YOURPROJECT_ID
+        // copy value from iconfont:
+        // https://www.iconfont.cn/manage/index?manage_type=myprojects&projectId=YOURPROJECT_ID
         <div className="app-container">
           <div className="is-item">
             <ReactSvgIcon value="iconPaaS_test" />
@@ -49,8 +50,8 @@ npm update @feizheng/react-svg-icon
 
           <div className="is-item">
             <ReactSvgIcon value="iconPaaS_ruler" size="20" />
-            <ReactSvgIcon value="iconG_zhenduan" size="40"/>
-            <ReactSvgIcon value="iconG_data" size="50"/>
+            <ReactSvgIcon value="iconG_zhenduan" size="40" />
+            <ReactSvgIcon value="iconG_data" size="50" />
           </div>
         </div>
       );
