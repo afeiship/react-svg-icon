@@ -17,6 +17,7 @@ npm update @feizheng/react-svg-icon
 | className | string | -       | The extended className for component. |
 | iconClass | string | 'icon'  | The main(prefix) icon class.          |
 | value     | string | -       | The icon name.                        |
+| size      | number | -       | The icon size(font-size).             |
 
 
 ## usage
@@ -40,9 +41,17 @@ npm update @feizheng/react-svg-icon
       return (
         // copy value from iconfont: https://www.iconfont.cn/manage/index?manage_type=myprojects&projectId=YOURPROJECT_ID
         <div className="app-container">
-          <ReactSvgIcon value="iconPaaS_test" />
-          <ReactSvgIcon value="iconPaaS_search" />
-          <ReactSvgIcon value="iconPaaS_sort" />
+          <div className="is-item">
+            <ReactSvgIcon value="iconPaaS_test" />
+            <ReactSvgIcon value="iconPaaS_search" />
+            <ReactSvgIcon value="iconPaaS_sort" />
+          </div>
+
+          <div className="is-item">
+            <ReactSvgIcon value="iconPaaS_ruler" size="20" />
+            <ReactSvgIcon value="iconG_zhenduan" size="40"/>
+            <ReactSvgIcon value="iconG_data" size="50"/>
+          </div>
         </div>
       );
     }
