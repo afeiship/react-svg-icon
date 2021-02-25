@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import noop from '@feizheng/noop';
 import objectAssign from 'object-assign';
 
 const CLASS_NAME = 'react-svg-icon';
@@ -26,7 +24,7 @@ export default class ReactSvgIcon extends Component {
     /**
      * The icon size(font-size).
      */
-    size: PropTypes.number
+    size: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
   };
 
   static defaultProps = {

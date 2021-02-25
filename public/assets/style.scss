@@ -1,35 +1,34 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-html,
-body,
-#app {
-  height: 100%;
-}
-
 @import "@/components/style.scss";
+@import "~@jswork/react-github-corner/dist/style.scss";
+@import "~@jswork/react-sw-update-tips/dist/style.scss";
+@import "~@jswork/react-demokit/dist/style.scss";
 
 .app-container {
-  padding: 50px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  position: relative;
-  top: 100px;
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
-  .react-svg-icon {
-    font-size: 40px;
-    margin-right: 30px;
-    border: 1px solid #ccc;
+  .is-body {
+    padding: 100px 0 0;
+    background: #fff;
+    width: 50%;
+    min-width: 320px;
+    margin: 0 auto;
+  }
+
+  .is-item {
+    text-align: center;
   }
 
   .is-item + .is-item {
     margin-top: 30px;
-    // & + & {
+  }
+  .react-svg-icon {
+    font-size: 40px;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    & + .react-svg-icon {
+      margin-left: 30px;
+    }
 
-    // margin-top: 10px;
-    // }
+    &:hover {
+      border-color: #f60;
+    }
   }
 }

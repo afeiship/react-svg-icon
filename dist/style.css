@@ -1,0 +1,10 @@
+.react-svg-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  font-size: 14px;
+  fill: currentColor;
+  overflow: hidden; }
+  .react-svg-icon > * {
+    pointer-events: none; }
